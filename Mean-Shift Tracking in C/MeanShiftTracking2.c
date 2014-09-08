@@ -173,8 +173,8 @@ void MeanShiftVectEstimate(unsigned int *initialCoordinates,unsigned int *curren
 
 
 	
-	for(r=1;r<windowSize;r++)			//niama smisul da izchisliawam stoinostite za r=0 i c=0 sled kato niama da giizpolzwam sled towa
-		for(c=1;c<windowSize;c++)
+	for(r=0;r<windowSize;r++)			//niama smisul da izchisliawam stoinostite za r=0 i c=0 sled kato niama da giizpolzwam sled towa
+		for(c=0;c<windowSize;c++)
 		{
 			wi=0;
 			PixValue=*(filteredCandidateImage+r*windowSize+c);
